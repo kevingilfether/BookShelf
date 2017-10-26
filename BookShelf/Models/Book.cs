@@ -13,6 +13,7 @@ namespace BookShelf.Models
         public int ID { get; set; }
         [MinLength(2),MaxLength(50)]
         public string Title { get; set; }
+        [Display(Name="Date of Publication")]
         public DateTime PublishedDate { get; set; }
         [MaxLength(500)]
         public string Description { get; set; }
