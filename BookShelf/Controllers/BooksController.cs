@@ -88,7 +88,7 @@ namespace BookShelf.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Title,PublishedDate,Description,ISBN,CategoryID")] Book book)
+        public ActionResult Edit([Bind(Include = "ID,Title,PublishedDate,Description,ISBN,Price,CategoryID")] Book book)
         {
             if (ModelState.IsValid)
             {
