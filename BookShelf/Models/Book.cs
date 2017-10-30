@@ -19,6 +19,8 @@ namespace BookShelf.Models
         public string Description { get; set; }
         public string ISBN { get; set; }
 
+        public double Price { get; set; }
+
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }

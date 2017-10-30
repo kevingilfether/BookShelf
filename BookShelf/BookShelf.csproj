@@ -133,6 +133,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710261456087_InitialCreate.cs" />
+    <Compile Include="Migrations\201710261456087_InitialCreate.Designer.cs">
+      <DependentUpon>201710261456087_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710301738326_AddedPrice.cs" />
+    <Compile Include="Migrations\201710301738326_AddedPrice.Designer.cs">
+      <DependentUpon>201710301738326_AddedPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookShelfContext.cs" />
     <Compile Include="Models\Category.cs" />
@@ -206,6 +215,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710261456087_InitialCreate.resx">
+      <DependentUpon>201710261456087_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710301738326_AddedPrice.resx">
+      <DependentUpon>201710301738326_AddedPrice.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -18,8 +18,6 @@ namespace BookShelf.Controllers
         public ActionResult Index()
         {
             var books = db.Books.Include(b => b.Category);
-            ViewBag.FavoriteFood = "Taco Bell";
-            ViewBag.FavoriteNum = 3;
 
             return View(books.ToList());
         }
@@ -36,6 +34,11 @@ namespace BookShelf.Controllers
             {
                 return HttpNotFound();
             }
+
+            double taxRate = 1.07;
+
+            ViewBag.PriceWithTax = book.Price * taxRate;
+
             return View(book);
         }
 
