@@ -18,6 +18,9 @@ namespace BookShelf.Controllers
         public ActionResult Index()
         {
             var books = db.Books.Include(b => b.Category);
+            ViewBag.FavoriteFood = "Taco Bell";
+            ViewBag.FavoriteNum = 3;
+
             return View(books.ToList());
         }
 

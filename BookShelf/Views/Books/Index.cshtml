@@ -5,12 +5,13 @@
 }
 
 <h2>Index</h2>
+<h3>@ViewBag.FavoriteNum</h3>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 
-<div class="row">
+
 @foreach (var item in Model)
 {
     <div class="col-sm-6 col-md-4">
@@ -24,9 +25,10 @@
         </div>
     </div>
 }
-</div>
 
-@*<table class="table">
+@*This is the base table code
+    
+    <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Category.Name)
